@@ -1,9 +1,11 @@
 import React from 'react'
+import Heading from '../../Components/Heading'
 import Promise from '../../Images/promise2.svg'
 
 export default function WhatWepromise() {
     return (
         <section>
+            <Heading title="What we Promise" />
             <div className="row">
             <div className="">
                 <div className="col s12 l6">

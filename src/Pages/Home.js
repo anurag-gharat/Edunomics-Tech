@@ -4,6 +4,7 @@ import About from '../Contents/HomePage/About'
 import WhatWeDo from '../Contents/HomePage/WhatWeDo'
 import WhoWeServe from '../Contents/HomePage/WhoWeServe'
 import WhatWepromise from '../Contents/HomePage/WhatWepromise'
+import WhatWeCreated from '../Contents/HomePage/WhatWeCreated'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
           <WhatWeDo />
           <WhoWeServe />
           <WhatWepromise />
+          <WhatWeCreated />
         </>
     )
 }
