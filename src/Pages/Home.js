@@ -3,6 +3,7 @@ import Main from '../Contents/HomePage/Main'
 import About from '../Contents/HomePage/About'
 import WhatWeDo from '../Contents/HomePage/WhatWeDo'
 import WhoWeServe from '../Contents/HomePage/WhoWeServe'
+import WhatWepromise from '../Contents/HomePage/WhatWepromise'
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
           <About /> 
           <WhatWeDo />
           <WhoWeServe />
+          <WhatWepromise />
         </>
     )
 }

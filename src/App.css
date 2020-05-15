@@ -4,6 +4,10 @@ body{
     box-sizing: border-box;
     font-family: "Montserrat",'sans-serif';
 }
+.list-promise li{
+    list-style: disc !important;
+    
+}
 .no-mar{
     margin:0px !important;
 }

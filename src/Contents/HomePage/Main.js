@@ -1,5 +1,5 @@
 import React from 'react'
-import Landing from '../../Images/landing4.svg'
+import Landing from '../../Images/landing3.svg'
 
 export default function Main() {
     return (
