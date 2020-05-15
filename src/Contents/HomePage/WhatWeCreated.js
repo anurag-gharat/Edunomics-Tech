@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import M from  'materialize-css/dist/js/materialize.min.js';
+import {Link} from 'react-router-dom'
 import Heading from '../../Components/Heading'
 import Car1 from '../../Images/car1.png'
 import Car2 from '../../Images/car2.png'
@@ -64,7 +64,8 @@ export default function WhatWeCreated() {
             
             </div>
             <div className="row">
-
+                {/* the initial idea is to make a seperate page here! Searching for some other idea */}
+                <button className="btn btn-large "><Link>Know More</Link></button>
             </div>
         
         </section>
