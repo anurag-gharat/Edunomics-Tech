@@ -14,7 +14,7 @@ export default function About() {
                         <a href="#whatwedo" className="button-primary">What we do?</a>
                     </div>
                     <div className="col s6"> 
-                        <a href="#whatwedo" className="button-primary">Who we serve?</a>
+                        <a href="#whoweserve" className="button-primary">Who we serve?</a>
                     </div>
                 
                 </div>

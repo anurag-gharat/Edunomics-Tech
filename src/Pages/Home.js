@@ -2,6 +2,7 @@ import React from 'react'
 import Main from '../Contents/HomePage/Main'
 import About from '../Contents/HomePage/About'
 import WhatWeDo from '../Contents/HomePage/WhatWeDo'
+import WhoWeServe from '../Contents/HomePage/WhoWeServe'
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
           <Main /> 
           <About /> 
           <WhatWeDo />
+          <WhoWeServe />
         </>
     )
 }

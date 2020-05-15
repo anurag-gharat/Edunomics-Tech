@@ -25,8 +25,14 @@ footer p{
 .pl-5{
     padding-left: 50px !important;
 }
+.p-10{
+    padding: 10px;
+}
 p{
     color: #4b4b4b !important;
+}
+.display-2{
+    font-size: 3rem;
 }
 .display-1{
     font-size: 2rem;
