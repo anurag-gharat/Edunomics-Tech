@@ -9,6 +9,7 @@ import './App.css';
 import About from './Pages/About';
 import Team from './Pages/Team';
 import Solutions from './Pages/Solutions';
+import ContactUs from './Pages/ContactUs';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path="/aboutus"  component={About} />
           <Route path="/ourteam"  component={Team} />
           <Route path="/solutions" component={Solutions} />
+          <Route path="/contact" component={ContactUs} />
+
 
         </Switch>
       <Footer />
