@@ -8,6 +8,8 @@ import Home from './Pages/Home'
 import './App.css';
 import About from './Pages/About';
 import Team from './Pages/Team';
+import Solutions from './Pages/Solutions';
+
 
 function App() {
 
@@ -24,8 +26,9 @@ function App() {
       <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/aboutus" exact component={About} />
-          <Route path="/ourteam" exact component={Team} />
+          <Route path="/aboutus"  component={About} />
+          <Route path="/ourteam"  component={Team} />
+          <Route path="/solutions" component={Solutions} />
 
         </Switch>
       <Footer />
