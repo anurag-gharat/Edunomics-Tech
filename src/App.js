@@ -15,6 +15,7 @@ import Blog from './Pages/Blog';
 import SingleBlog from './Pages/SingleBlog';
 import WhitePaper from './Pages/WhitePaper';
 import CaseStudies from './Pages/CaseStudies';
+import Works from './Pages/Works';
 
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
           <Route path="/contact" component={ContactUs} />
           <Route path="/whitepaper" component={WhitePaper} />
           <Route path="/casestudies" component={CaseStudies} />
+          <Route path="/works" component={Works} />
+
 
 
         </Switch>

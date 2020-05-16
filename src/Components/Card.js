@@ -9,7 +9,7 @@ export default function Card(props) {
             {props.title ? <h6>{props.title}</h6>:null   }            
             {props.text ? <p>{props.text}</p>:null   }
             {props.button ? <Link to={props.button.path} className="btn deep-purple white-text" >{props.button.text}</Link>:null   }            
-
+            {props.footerText?<p className="deep-purple-text">Technology: NodeJS, ReactJS, Python & Android along with GCP AWS Cloud, Python</p>:null}
 
         </div>
     )

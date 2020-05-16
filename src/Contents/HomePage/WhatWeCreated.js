@@ -63,9 +63,9 @@ export default function WhatWeCreated() {
                 </div>  
             
             </div>
-            <div className="row">
+            <div className="row center">
                 {/* the initial idea is to make a seperate page here! Searching for some other idea */}
-                <button className="btn btn-large "><Link>Know More</Link></button>
+                <Link to="/works" className="white-text btn btn-large deep-purple hoverable">Know More</Link>
             </div>
         
         </section>
