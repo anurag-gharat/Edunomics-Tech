@@ -12,6 +12,7 @@ import Solutions from './Pages/Solutions';
 import ContactUs from './Pages/ContactUs';
 import Services from './Pages/Services';
 import Blog from './Pages/Blog';
+import SingleBlog from './Pages/SingleBlog';
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
           <Route path="/ourteam"  component={Team} />
           <Route path="/solutions" component={Solutions} />
           <Route path="/services" component={Services} />
-          <Route path="/blog" component={Blog} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/blog/:blogId" component={SingleBlog} />
           <Route path="/contact" component={ContactUs} />
 
 
