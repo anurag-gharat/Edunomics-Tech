@@ -18,6 +18,8 @@ export default function WhitePaper() {
             </div>
             <div className="divider"></div>
             <div className="row">
+                <Heading title="Experience WOW" />
+                <BlockQuote title="Get in touch with us" />
                 <form>
                 <div className="row">
                     <div className="col s12 l6 input-field" >

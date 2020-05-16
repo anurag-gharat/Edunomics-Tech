@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BlogCard() {
     return (
-        <div className="card">
+        <div className="card hoverable">
         <div className="card-image">
           <img src="https://s3-ap-south-1.amazonaws.com/redlof/think201.com/uploads/2019/02/website-vs-web-app-1024x384.png" />
         </div>
