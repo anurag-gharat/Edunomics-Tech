@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../Images/logo.png'
 import M from  'materialize-css/dist/js/materialize.min.js';
 
 
@@ -18,10 +19,10 @@ export default function Navbar() {
     },[])
 
     return (
-        <div>
-            <nav className="nav-extended white">
-            <div className="nav-wrapper black">
-            <a href="/" className="brand-logo"><img className="logo" /></a>
+        <div className="navbar-fixed">
+            <nav className="navbar-fixed deep-purple">
+            <div className="nav-wrapper deep-purple">
+            <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="50%" width="50%" style={{margin:"auto 5"}}  /></a>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons green-text darken-4">menu</i></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/solution">Solution</Link></li>
