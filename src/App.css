@@ -7,6 +7,9 @@ body{
 .card-height{
     min-height: 400px !important;
 }
+.container-fluid{
+    padding: 5%;
+}
 .list-promise li{
     list-style: disc !important;   
 }

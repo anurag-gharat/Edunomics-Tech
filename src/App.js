@@ -11,6 +11,7 @@ import Team from './Pages/Team';
 import Solutions from './Pages/Solutions';
 import ContactUs from './Pages/ContactUs';
 import Services from './Pages/Services';
+import Blog from './Pages/Blog';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <Route path="/ourteam"  component={Team} />
           <Route path="/solutions" component={Solutions} />
           <Route path="/services" component={Services} />
-
+          <Route path="/blog" component={Blog} />
           <Route path="/contact" component={ContactUs} />
 
 
