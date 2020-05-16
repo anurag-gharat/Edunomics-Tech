@@ -25,7 +25,7 @@ export default function Navbar() {
             <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="50%" width="50%" style={{margin:"auto 5"}}  /></a>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons green-text darken-4">menu</i></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><Link to="/solution">Solution</Link></li>
+            <li><Link to="/solutions">Solution</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><a className="dropdown-trigger" href="#" data-target="dropdown11">Company<i className="material-icons right">arrow_drop_down</i></a></li>
                 <li><a className="dropdown-trigger" href="#" data-target="dropdown21">Resources<i className="material-icons right">arrow_drop_down</i></a></li>
@@ -33,11 +33,11 @@ export default function Navbar() {
              </ul>
             <ul id="dropdown1" className="dropdown-content">
                 <li><Link to="/aboutus">About Us</Link></li>
-                <li><Link to="/team">Team</Link></li>
+                <li><Link to="/ourteam">Team</Link></li>
             </ul>
             <ul id="dropdown11" className="dropdown-content">
                 <li><Link to="/aboutus">About Us</Link></li>
-                <li><Link to="/team">Team</Link></li>
+                <li><Link to="/ourteam">Team</Link></li>
             </ul>
             <ul id="dropdown2" className="dropdown-content">
                 <li><Link to="/blog">Blog</Link></li>

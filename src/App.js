@@ -13,6 +13,8 @@ import ContactUs from './Pages/ContactUs';
 import Services from './Pages/Services';
 import Blog from './Pages/Blog';
 import SingleBlog from './Pages/SingleBlog';
+import WhitePaper from './Pages/WhitePaper';
+import CaseStudies from './Pages/CaseStudies';
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
           <Route path="/blog" exact component={Blog} />
           <Route path="/blog/:blogId" component={SingleBlog} />
           <Route path="/contact" component={ContactUs} />
+          <Route path="/whitepaper" component={WhitePaper} />
+          <Route path="/casestudies" component={CaseStudies} />
 
 
         </Switch>
