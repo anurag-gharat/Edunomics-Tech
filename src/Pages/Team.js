@@ -6,7 +6,7 @@ import Img from '../Images/member1.jpg'
 
 export default function Team() {
     return (
-        <>
+        <div className="container-fluid">
           <Heading title="Meet Our Team"/>
             <div className="row">
                 <div className="container center">
@@ -86,6 +86,6 @@ export default function Team() {
                 </div>
             </div>
             </div>
-        </>
+        </div>
     )
 }

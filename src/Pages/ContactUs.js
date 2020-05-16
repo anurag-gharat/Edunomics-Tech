@@ -7,7 +7,7 @@ import Meeting from '../Images/meeting.svg'
 
 export default function ContactUs() {
     return (
-        <>
+        <div className="container-fluid">
             <section className="section">
                 <Heading title="Contact Us" />
                 <p className="center">Take up your option to contact us!</p>
@@ -49,6 +49,6 @@ export default function ContactUs() {
                     </div>
                 </div>
             </section>  
-        </>
+        </div>
     )
 }

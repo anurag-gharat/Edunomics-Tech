@@ -58,11 +58,11 @@ export default function Footer() {
 
             </div>
             <div className="row no-mar center">
-                <GrFacebookOption className="display-1 deep-purple-text lighten-1" />  
-                <GrTwitter  className="display-1 deep-purple-text" />   
-                <GrGooglePlus  className="display-1 deep-purple-text" /> 
-                <GrLinkedinOption  className="display-1 deep-purple-text" />
-                <FaWhatsapp  className="display-1 deep-purple-text"  />               
+                <GrFacebookOption className="display-1 footer-icons deep-purple-text lighten-1" />  
+                <GrTwitter  className="display-1 footer-icons deep-purple-text" />   
+                <GrGooglePlus  className="display-1 footer-icons deep-purple-text" /> 
+                <GrLinkedinOption  className="display-1 footer-icons deep-purple-text" />
+                <FaWhatsapp  className="display-1 footer-icons deep-purple-text"  />               
             </div>
             <div className="row no-mar center black white-text">
             All rights reserved.

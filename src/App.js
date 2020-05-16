@@ -16,12 +16,15 @@ import SingleBlog from './Pages/SingleBlog';
 import WhitePaper from './Pages/WhitePaper';
 import CaseStudies from './Pages/CaseStudies';
 import Works from './Pages/Works';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 function App() {
 
   useEffect(()=>{
     M.AutoInit()
+    AOS.init();
   },[])
 
 

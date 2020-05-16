@@ -9,10 +9,10 @@ export default function WhatWepromise() {
             <div className="row">
             <div className="">
                 <div className="col s12 l6">
-                    <img src={Promise} alt="promise"></img>
+                    <img src={Promise} alt="promise"  data-aos="fade-up" ></img>
                 </div>
                 <div className="col s12 l6">
-                    <ul className="list-promise">
+                    <ul className="list-promise"  data-aos="fade-down">
                         <li><p>Edunomics biggest concern when choosing a technology is how it fits our customer's needs. </p>
                         <div className="divider"></div></li>
                         <li><p>Edunomics does not resell any platforms or technologies of the third party vendors. We promise that we never have any commercial incentive while choosing a technology or approach, we base our decision only on the fact how our customers would benefit from it. </p>

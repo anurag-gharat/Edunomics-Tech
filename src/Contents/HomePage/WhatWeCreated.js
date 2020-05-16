@@ -7,7 +7,6 @@ import Car3 from '../../Images/car3.png'
 import Car4 from '../../Images/car4.png'
 import Car5 from '../../Images/goldrat.png'
 import Car6 from '../../Images/car6.png'
-
 import Card from '../../Components/Card';
 
 

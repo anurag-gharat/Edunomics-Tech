@@ -4,6 +4,18 @@ body{
     box-sizing: border-box;
     font-family: "Montserrat",'sans-serif';
 }
+nav{
+    position: fixed !important;
+    z-index: 5 !important;
+}
+.footer-icons:hover{
+    color: #be9df7 !important;
+    transform: scale(2,2);
+    transition: 0.5s ease;
+}
+.footer-list>li>a:hover{
+    color: #9575cd;
+}
 .card-height{
     min-height: 400px !important;
 }
@@ -58,11 +70,29 @@ section{
     padding-top: 100px !important;
 }
 .button-primary{
-    padding:10px 20px !important;
-    font-size: 1rem !important;
+    padding:10px 25px !important;
+    font-size: 1.2rem !important;
     background-image:linear-gradient(45deg,#673ab7 ,#9575cd  )!important ;
     border: 0px;
     color: #fff  ;   
+
+}
+.button-primary:hover{
+    padding:10px 25px !important;
+    font-size: 1.2rem !important;
+    background-image:linear-gradient(45deg,#9575cd ,#673ab7  )!important ;
+    border: 0px;
+    color: #fff  ;
+    transition: 1s ease-in-out;   
+}
+.button-secondary{
+    margin-top:30px !important ;
+    padding:10px 45px !important;
+    font-size: 1.3rem !important;
+    background-image:linear-gradient(45deg,#673ab7 ,#9575cd  )!important ;
+    border: 0px;
+    border-radius: 30px;
+    color: #fff  ; 
 }
 blockquote{
     border-color: #9575cd;

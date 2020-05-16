@@ -19,8 +19,8 @@ export default function Navbar() {
     },[])
 
     return (
-        <div className="navbar-fixed">
-            <nav className="navbar-fixed deep-purple">
+        <div className="navbar">
+            <nav className=" deep-purple">
             <div className="nav-wrapper deep-purple">
             <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="50%" width="50%" style={{margin:"auto 5"}}  /></a>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons green-text darken-4">menu</i></a>

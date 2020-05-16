@@ -6,7 +6,8 @@ import Panel from '../../Components/Panel'
 
 export default function AboutUs() {
     return (
-        <section className="section">
+        <div className="container-fluid">
+            <section className="section">
                 <Heading title="About Us" />
             <div className="container">
             <p>Let’s face it. Most people hate the software they use at work.
@@ -26,5 +27,6 @@ export default function AboutUs() {
                 </div>
             </div>
         </section>
+        </div>
     )   
 }

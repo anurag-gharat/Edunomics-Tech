@@ -14,8 +14,9 @@ export default function Home() {
           <About /> 
           <WhatWeDo />
           <WhoWeServe />
-          <WhatWepromise />
           <WhatWeCreated />
+          <WhatWepromise />
+
         </>
     )
 }
