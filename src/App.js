@@ -10,6 +10,7 @@ import About from './Pages/About';
 import Team from './Pages/Team';
 import Solutions from './Pages/Solutions';
 import ContactUs from './Pages/ContactUs';
+import Services from './Pages/Services';
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
           <Route path="/aboutus"  component={About} />
           <Route path="/ourteam"  component={Team} />
           <Route path="/solutions" component={Solutions} />
+          <Route path="/services" component={Services} />
+
           <Route path="/contact" component={ContactUs} />
 
 

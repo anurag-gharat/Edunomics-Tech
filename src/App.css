@@ -4,6 +4,9 @@ body{
     box-sizing: border-box;
     font-family: "Montserrat",'sans-serif';
 }
+.card-height{
+    min-height: 400px !important;
+}
 .list-promise li{
     list-style: disc !important;   
 }
@@ -38,7 +41,7 @@ p{
     color: #4b4b4b !important;
 }
 .display-2{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .display-1{
     font-size: 2rem;
