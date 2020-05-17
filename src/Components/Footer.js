@@ -26,32 +26,32 @@ export default function Footer() {
                 <div className="col l3 s12 deep-purple-text ">
                     <h6 >Services</h6>
                     <ul className="footer-list">
-                        <li><a href="http://tech.edunomics.in/custom-software" target="_blank">Custom Software Development</a></li>
-                        <li><a href="http://tech.edunomics.in/dedicated-development-teams" target="_blank">Dedicated Development Teams</a></li>
-                        <li><a href="http://tech.edunomics.in/legacy-software-migration" target="_blank">Legacy Software Management</a></li>
-                        <li><a href="http://tech.edunomics.in/computer-vision" target="_blank">Computer Vision</a></li>
-                        <li><a href="http://tech.edunomics.in/nlp" target="_blank">Natural Language Processing</a></li>
-                        <li><a href="http://tech.edunomics.in/data-analytics" target="_blank">Data Analytics and Visualization</a></li>
+                        <li><a href="http://tech.edunomics.in/custom-software" target="_blank" rel="noopener noreferrer">Custom Software Development</a></li>
+                        <li><a href="http://tech.edunomics.in/dedicated-development-teams" target="_blank" rel="noopener noreferrer">Dedicated Development Teams</a></li>
+                        <li><a href="http://tech.edunomics.in/legacy-software-migration" target="_blank" rel="noopener noreferrer">Legacy Software Management</a></li>
+                        <li><a href="http://tech.edunomics.in/computer-vision" target="_blank" rel="noopener noreferrer">Computer Vision</a></li>
+                        <li><a href="http://tech.edunomics.in/nlp" target="_blank" rel="noopener noreferrer">Natural Language Processing</a></li>
+                        <li><a href="http://tech.edunomics.in/data-analytics" target="_blank" rel="noopener noreferrer">Data Analytics and Visualization</a></li>
                     </ul>
                 </div>
                 <div className="col l3 s12 ">
                     <h6 className="deep-purple-text">Solutions</h6>
                     <ul className="footer-list">
-                        <li><a href="http://distribution.edunomics.in/" target="_blank">Distribution Management System</a></li>
-                        <li><a href="http://service.edunomics.in/"  target="_blank">Service Management System</a></li>
-                        <li><a href="http://procure.edunomics.in/"  target="_blank">Procurement Management System</a></li>
-                        <li><a href="http://invoice.edunomics.in/"  target="_blank">Invoice Management System</a></li>
-                        <li><a href="http://interactive.edunomics.in/"  target="_blank">Interactive Marketing System</a></li>
-                        <li><a href="http://fleet.edunomics.in/"  target="_blank">Fleet Management System</a></li>
+                        <li><a href="http://distribution.edunomics.in/" target="_blank" rel="noopener noreferrer">Distribution Management System</a></li>
+                        <li><a href="http://service.edunomics.in/"  target="_blank" rel="noopener noreferrer">Service Management System</a></li>
+                        <li><a href="http://procure.edunomics.in/"  target="_blank" rel="noopener noreferrer">Procurement Management System</a></li>
+                        <li><a href="http://invoice.edunomics.in/"  target="_blank" rel="noopener noreferrer">Invoice Management System</a></li>
+                        <li><a href="http://interactive.edunomics.in/"  target="_blank" rel="noopener noreferrer">Interactive Marketing System</a></li>
+                        <li><a href="http://fleet.edunomics.in/"  target="_blank" rel="noopener noreferrer">Fleet Management System</a></li>
                     </ul>
                 </div>
                 <div className="col l3 s12 ">
                     <h6 className="deep-purple-text">Industry</h6>
                     <ul className="footer-list">
-                        <li><a href="http://tech.edunomics.in/come" target="_blank">Education</a></li>
-                        <li><a href="http://tech.edunomics.in/come" target="_blank">Retail & Wholesale</a></li>
-                        <li><a href="http://tech.edunomics.in/come" target="_blank">Construction</a></li>
-                        <li><a href="http://tech.edunomics.in/come" target="_blank">Transpotation</a></li>
+                        <li><a href="http://tech.edunomics.in/come" target="_blank" rel="noopener noreferrer">Education</a></li>
+                        <li><a href="http://tech.edunomics.in/come" target="_blank" rel="noopener noreferrer">Retail & Wholesale</a></li>
+                        <li><a href="http://tech.edunomics.in/come" target="_blank" rel="noopener noreferrer">Construction</a></li>
+                        <li><a href="http://tech.edunomics.in/come" target="_blank" rel="noopener noreferrer">Transpotation</a></li>
 
                     </ul>
                 </div>

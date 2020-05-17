@@ -22,8 +22,8 @@ export default function Navbar() {
         <div className="navbar">
             <nav className=" deep-purple">
             <div className="nav-wrapper deep-purple">
-            <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="50%" width="50%" style={{margin:"auto 5"}}  /></a>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons green-text darken-4">menu</i></a>
+            <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="100%" width="60%"   /></a>
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons white-text ">menu</i></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/solutions">Solution</Link></li>
                 <li><Link to="/services">Services</Link></li>
@@ -54,7 +54,7 @@ export default function Navbar() {
         </nav>
 
         <ul className="sidenav" id="mobile-demo">
-         <li><Link to="/solution">Solution</Link></li>
+         <li><Link to="/solutions">Solution</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><a className="dropdown-trigger" href="#!" data-target="dropdown1">Company<i className="material-icons right">arrow_drop_down</i></a></li>
                 <li><a className="dropdown-trigger" href="#!" data-target="dropdown2">Resources<i className="material-icons right">arrow_drop_down</i></a></li>

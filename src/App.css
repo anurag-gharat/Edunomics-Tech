@@ -71,18 +71,19 @@ section{
 }
 .button-primary{
     padding:10px 25px !important;
+    border-radius: 5px;
     font-size: 1.2rem !important;
     background-image:linear-gradient(45deg,#673ab7 ,#9575cd  )!important ;
     border: 0px;
     color: #fff  ;   
-
 }
 .button-primary:hover{
     padding:10px 25px !important;
     font-size: 1.2rem !important;
     background-image:linear-gradient(45deg,#9575cd ,#673ab7  )!important ;
     border: 0px;
-    color: #fff  ;
+    border-radius: 5px;
+    color: #fff;
     transition: 1s ease-in-out;   
 }
 .button-secondary{
@@ -91,9 +92,25 @@ section{
     font-size: 1.3rem !important;
     background-image:linear-gradient(45deg,#673ab7 ,#9575cd  )!important ;
     border: 0px;
+    border-radius: 5px;
     border-radius: 30px;
     color: #fff  ; 
 }
 blockquote{
     border-color: #9575cd;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-primary{
+        padding:8px 15px !important;
+        font-size: 0.7rem !important;
+        background-image:linear-gradient(45deg,#673ab7 ,#9575cd  )!important ;
+        border: 0px;
+        border-radius: 5px;
+        color: #fff  ;   
+    }
+    .pl-5{
+        padding-left: 0px !important;
+    }
+
 }

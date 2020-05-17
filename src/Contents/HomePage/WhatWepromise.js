@@ -4,10 +4,10 @@ import Promise from '../../Images/promise2.svg'
 
 export default function WhatWepromise() {
     return (
-        <section>
+        <section className="section">
             <Heading title="What we Promise" />
             <div className="row">
-            <div className="">
+            <div className="container-fluid">
                 <div className="col s12 l6">
                     <img src={Promise} alt="promise"  data-aos="fade-up" ></img>
                 </div>

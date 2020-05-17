@@ -13,12 +13,7 @@ import Card from '../../Components/Card';
 
 export default function WhatWeCreated() {
     
-    
     useEffect(()=>{
-
-        
-
-
     },[])
     
     
@@ -27,34 +22,34 @@ export default function WhatWeCreated() {
                 <Heading title="What We Created?" />   
             <div className="container">
             <div className="row">
-                    <div className="col l4 s6">
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car1} alt="Brands" width="100%" height="100px"/>
                         </Card>
                     </div>
-                    <div className="col l4 s6">
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car2} alt="Brands" width="100%"  height="100px"/>
                         </Card>
                     </div>
-                    <div className="col l4 s6">
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car3} alt="Brands" width="100%" height="100px" />
                         </Card>
                     </div>
-                </div>         
-                <div className="row">
-                    <div className="col l4 s6">
+                        
+                
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car4} alt="Brands" width="100%" height="100px"/>
                         </Card>
                     </div>
-                    <div className="col l4 s6">
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car5} alt="Brands" width="100%"  height="100px"/>
                         </Card>
                     </div>
-                    <div className="col l4 s6">
+                    <div className="col l4 s12">
                         <Card mystyle="grey lighten-4 z-depth-1">
                             <img src={Car6} alt="Brands" width="100%" height="100px" />
                         </Card>

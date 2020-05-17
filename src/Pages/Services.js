@@ -15,7 +15,7 @@ export default function Services() {
             <BlockQuote title="Our Services,Packed or Seperate" />
             <div className="row">
                 <div className="col l4 s6 m6">
-                    <Card  mystyle="card-height" title="Custom Software Development" text="Our Young team is equally passionate to develop a software as per the specific needs of your business rapidly" button={{text:"Know More",path:"\knowmore"}}>
+                    <Card  mystyle="card-height" title="Custom Software Development" text="Our Young team is equally passionate to develop a software as per the specific needs of your business rapidly" button={{text:"Know More",path:"knowmore"}}>
                         <FcServices className="display-2" />
                     </Card>
                 </div>

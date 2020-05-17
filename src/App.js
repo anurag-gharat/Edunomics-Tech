@@ -18,6 +18,7 @@ import CaseStudies from './Pages/CaseStudies';
 import Works from './Pages/Works';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import Error404 from './Pages/Error404';
 
 
 function App() {
@@ -46,8 +47,7 @@ function App() {
           <Route path="/whitepaper" component={WhitePaper} />
           <Route path="/casestudies" component={CaseStudies} />
           <Route path="/works" component={Works} />
-
-
+          <Route  component={Error404} />
 
         </Switch>
       <Footer />
