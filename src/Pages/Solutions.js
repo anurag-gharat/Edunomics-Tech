@@ -30,12 +30,11 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
                         </Card>
                     </div>
                     <div className="col s6 l4 m6">
-                        <Card title="Invoice/Procurement Management System" text="Development of enterprise apps, including complex ERP, CRM, HRM, automated billing and payment system" mystyle="white lighten-4 z-depth-1">
+                        <Card title="Invoice Management System" text="Development of enterprise apps, including complex ERP, CRM, HRM, automated billing and payment system" mystyle="white lighten-4 z-depth-1">
                             <FaFileInvoice className="display-2 deep-purple-text" />
                         </Card>
                     </div>
-                </div>
-                <div className="row">
+
                     <div className="col s6 l4 m6">
                         <Card title="Fleet Managent System" text="Development of enterprise apps, including complex ERP, CRM, HRM, automated billing and payment system" mystyle="white lighten-4 z-depth-1">
                             <RiShipLine  className="display-2 deep-purple-text"/>

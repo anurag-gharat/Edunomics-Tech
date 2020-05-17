@@ -29,8 +29,7 @@ export default function Services() {
                         <FcServices className="display-2" />
                     </Card>
                 </div>
-            </div>
-            <div className="row">
+
                 <div className="col l4 s6 m6">
                     <Card mystyle="card-height" title="Computer Vision"  button={{text:"Know More",path:"\knowmore"}}>
                         <FcServices className="display-2" />
