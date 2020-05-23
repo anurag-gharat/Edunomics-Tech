@@ -1,10 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Heading from '../Components/Heading'
 import Panel from '../Components/Panel'
-import Img from '../Images/member1.jpg'
+import Loading from '../Components/Loading'
+import {getOurTeam} from '../API/TeamRequests'
+import Avatar from '../Images/avatar.jpg'
 
 
 export default function Team() {
+
+
+    const [team,setTeam]=useState([])
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(true)
+
+    const fetchData=()=>{
+        getOurTeam()
+        .then(response=>{
+            if(response.success){
+                setTeam(response.data)
+                setLoading(false)
+            }
+            else{
+                console.log("error occured")
+            }
+        })
+        .catch(error=>setError(error))
+     
+    }
+
+    useEffect(()=>{
+        fetchData()
+    },[])
+
+
     return (
         <div className="container-fluid">
           <Heading title="Meet Our Team"/>
@@ -14,77 +42,29 @@ export default function Team() {
                     <p>Meet our rockstars. Working across various parts of group-who have truly made it one of the most exciting place to work and create a differnce!</p>
                 </div>
                 <div className="container">
+                    
+                    
                 <div className="row ">
+                {loading ? 
+                (
+                    <Loading />
+                ): (
+                        team.map(member=>(
                     <div className="col l3 s6 m4 ">
-                        <Panel title="Member 1" alignment="center">
+
+                            <Panel title={member.name} alignment="center" key={member._id}>
                             <img 
                             alt="member"
                             className="responsive-img circle hoverable"
-                            src={Img}
+                            // src={`https://edunomics.herokuapp.com/api/tech/aboutus/getpic/${member.picUrl}` || Avatar}
+                            src={Avatar}
                             width="80%" />
-                        </Panel>
-                    </div>
-                    <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img}
-                            width="80%"  />
-                        </Panel>
-                    </div>
-                    <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%" />
-                        </Panel>
-                    </div>                   
-                     <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%" />
-                        </Panel>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%"  />
-                        </Panel>
-                    </div>
-                    <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%"  />
-                        </Panel>
-                    </div>
-                    <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%" />
-                        </Panel>
-                    </div>                   
-                     <div className="col l3 s6 m4">
-                        <Panel title="Member 1" alignment="center">
-                            <img 
-                            alt="member"
-                            className="responsive-img circle hoverable"
-                            src={Img} width="80%" />
-                        </Panel>
-                    </div>
-                </div>
+                        </Panel> 
+                        </div>
+                        ))
+                    )}
             </div>
+                            </div>
             </div>
         </div>
     )
