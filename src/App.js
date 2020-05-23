@@ -20,6 +20,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Error404 from './Pages/Error404';
 import StartUp from './Pages/StartUp';
+import ManagementSystems from './Pages/ManagementSystems';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
           <Route path="/casestudies" component={CaseStudies} />
           <Route path="/works" component={Works} />
           <Route path="/startup" component={StartUp} />
+          <Route path="/managementsystems" component={ManagementSystems} />
+
 
           <Route  component={Error404} />
 
