@@ -21,6 +21,7 @@ import 'aos/dist/aos.css'
 import Error404 from './Pages/Error404';
 import StartUp from './Pages/StartUp';
 import ManagementSystems from './Pages/ManagementSystems';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     
  
     <Router>
+      <ScrollToTop>
       <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -57,6 +59,7 @@ function App() {
 
         </Switch>
       <Footer />
+      </ScrollToTop>
     </Router>
   );
 }
