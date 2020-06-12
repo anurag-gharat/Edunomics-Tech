@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Heading from '../Components/Heading'
 import Panel from '../Components/Panel'
 import Loading from '../Components/Loading'
-import {getOurTeam} from '../API/TeamRequests'
+import {getOurTeam} from '../API/AllData'
 import Avatar from '../Images/avatar.jpg'
 
 
