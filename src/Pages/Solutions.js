@@ -39,11 +39,17 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
 <div className="row">
                 {loading ? (<Loading></Loading>)
                 :
-                (<div className="col s6 l4 m6">
-                <Card title="Distribution Management System" text="Development of enterprise apps, including complex ERP, CRM, HRM, automated billing and payment system" mystyle="white lighten-4 z-depth-1">
-                    <FaDesktop className="display-2 deep-purple-text" />
+                
+                (data.map(((item)=>(
+                    <div className="col s6 l4 m6" key={item._id}>
+                <Card title={item.solutionName} text={item.brief} mystyle="white lighten-4 z-depth-1">
+                    <div className="card-image">
+                    <img src="https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
+                    {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.solutionImgUrl}`}  alt="Image" /> */}
+                    </div>
                 </Card>
-            </div>)}
+            </div>
+                ))))}
                 
                 
                     
