@@ -32,7 +32,7 @@ export default function Services() {
                     <div className="col l4 s6 m6">
                     <Card key={item._id}  mystyle="card-height" title={item.projectName} text={item.brief} >
                     <div className="card-image">
-                    <img src="https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
+                    <img src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
                     {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.solutionImgUrl}`}  alt="Image" /> */}
                     </div>
                     </Card>

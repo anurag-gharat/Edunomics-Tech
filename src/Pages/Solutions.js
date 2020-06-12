@@ -41,7 +41,7 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
                     <div className="col s6 l4 m6" key={item._id}>
                 <Card title={item.solutionName} text={item.brief} mystyle="white lighten-4 z-depth-1">
                     <div className="card-image">
-                    <img src="https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
+                    <img src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
                     {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.solutionImgUrl}`}  alt="Image" /> */}
                     </div>
                 </Card>

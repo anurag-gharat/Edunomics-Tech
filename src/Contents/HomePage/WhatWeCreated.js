@@ -1,19 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import {Link} from 'react-router-dom'
 import Heading from '../../Components/Heading'
-import Car1 from '../../Images/car1.png'
-import Car2 from '../../Images/car2.png'
-import Car3 from '../../Images/car3.png'
-import Car4 from '../../Images/car4.png'
-import Car5 from '../../Images/goldrat.png'
-import Car6 from '../../Images/car6.png'
-import Card from '../../Components/Card';
-
+import {getAllBusiness} from '../../API/AllData'
+import Loading from '../../Components/Loading'
+import Card from '../../Components/Card'
 
 
 export default function WhatWeCreated() {
     
+    const [loading, setLoading] = useState(true)
+    const [data, setData] = useState([])
+    
     useEffect(()=>{
+        getAllBusiness()
+        .then(response=>setData(response.data))
+        .catch(error=>console.log(error))
+        .finally(()=>setLoading(false))
+
     },[])
     
     
@@ -22,38 +25,23 @@ export default function WhatWeCreated() {
                 <Heading title="What We Created?" />   
             <div className="container">
             <div className="row">
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car1} alt="Brands" width="100%" height="100px"/>
+
+                    {loading ? 
+                    ( <Loading /> ) 
+                    :  
+                    (
+                        data.map((item)=>(  
+                    <div className="col l4 s12" key={item._id}>
+                        <Card mystyle="grey lighten-4 z-depth-1" title={item.projectName} text={item.brief}>
+                        <div className="card-image">
+                        <img src="https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
+                        {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.projectImgUrl}`}  alt="Image" className="responsive-img" /> */}
+                        </div>
                         </Card>
                     </div>
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car2} alt="Brands" width="100%"  height="100px"/>
-                        </Card>
-                    </div>
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car3} alt="Brands" width="100%" height="100px" />
-                        </Card>
-                    </div>
-                        
-                
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car4} alt="Brands" width="100%" height="100px"/>
-                        </Card>
-                    </div>
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car5} alt="Brands" width="100%"  height="100px"/>
-                        </Card>
-                    </div>
-                    <div className="col l4 s12">
-                        <Card mystyle="grey lighten-4 z-depth-1">
-                            <img src={Car6} alt="Brands" width="100%" height="100px" />
-                        </Card>
-                    </div>
+                        ))
+                    ) }
+
                 </div>  
             
             </div>
