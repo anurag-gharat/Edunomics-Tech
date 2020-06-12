@@ -38,3 +38,17 @@ export const getAllServices=async()=>{
                 console.log("error is ",error)
         }
 }
+
+
+
+//for getting all blogs
+export const getAllBlogs=async()=>{
+        try{
+              const res=await axios.get('https://edunomics.herokuapp.com/api/tech/blog')  
+              
+              return res.data
+        }
+        catch(error){
+                console.log("error is ",error)
+        }
+}

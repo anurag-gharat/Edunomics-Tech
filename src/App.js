@@ -11,7 +11,7 @@ import Team from './Pages/Team';
 import Solutions from './Pages/Solutions';
 import ContactUs from './Pages/ContactUs';
 import Services from './Pages/Services';
-import Blog from './Pages/Blog';
+import Blogs from './Pages/Blogs';
 import SingleBlog from './Pages/SingleBlog';
 import WhitePaper from './Pages/WhitePaper';
 import CaseStudies from './Pages/CaseStudies';
@@ -45,7 +45,7 @@ function App() {
           <Route path="/ourteam"  component={Team} />
           <Route path="/solutions" component={Solutions} />
           <Route path="/services" component={Services} />
-          <Route path="/blog" exact component={Blog} />
+          <Route path="/blog" exact component={Blogs} />
           <Route path="/blog/:blogId" component={SingleBlog} />
           <Route path="/contact" component={ContactUs} />
           <Route path="/whitepaper" component={WhitePaper} />
