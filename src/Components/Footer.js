@@ -19,8 +19,8 @@ export default function Footer() {
                     </div>
                     <div className="row ">
                         <h6 className="deep-purple-text">Contact Us</h6>
-                        <p  className="white-text"><i class="material-icons left">call</i>7745050822</p>
-                        <p  className="white-text"><i class="material-icons left">email</i>youremail.com</p>
+                        <p  className="white-text"><i className="material-icons left">call</i>7745050822</p>
+                        <p  className="white-text"><i className="material-icons left">email</i>youremail.com</p>
                     </div>
                 </div>
                 <div className="col l3 s12 deep-purple-text ">
