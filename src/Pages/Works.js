@@ -2,13 +2,6 @@ import React from 'react'
 import Heading from '../Components/Heading'
 import Card from '../Components/Card'
 import Quality from '../Images/qualtiy.jpg'
-import Car1 from '../Images/car1.png'
-import Car2 from '../Images/car2.png'
-import Car3 from '../Images/car3.png'
-import Car4 from '../Images/car4.png'
-import Car5 from '../Images/goldrat.png'
-import Car6 from '../Images/car6.png'
-import BlockQuote from '../Components/BlockQuote'
 
 export default function Works() {
     return (
@@ -38,7 +31,7 @@ export default function Works() {
                      
                 </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
                 <div className="col s12">
                     <BlockQuote title="Brands we developed" />
                 </div>
@@ -74,7 +67,7 @@ export default function Works() {
                             <img src={Car6} alt="Brands" width="100%" height="100px" />
                         </Card>
                     </div>
-            </div>
+            </div> */}
         </div>
     )
 }
