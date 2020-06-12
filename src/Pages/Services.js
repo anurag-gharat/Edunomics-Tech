@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Heading from '../Components/Heading'
 import BlockQuote from '../Components/BlockQuote'
 import Card from '../Components/Card'
-import {FcServices} from 'react-icons/fc'
 import DiscussForm from '../Components/DiscussForm'
-
+import {getAllServices} from '../API/AllData'
+import Loading from '../Components/Loading'
 
 export default function Services() {
+
+    const [loading,setLoading] =useState(true)
+    const [data,setData]=useState([])
+
+    useEffect(()=>{
+        getAllServices()
+        .then(res=>setData(res.data))
+        .catch(error=>console.log(error))
+        .finally(()=>setLoading(false))
+    },[])
+
     return (
         <>
          <section>
@@ -14,38 +25,21 @@ export default function Services() {
             <div className="container">
             <BlockQuote title="Our Services,Packed or Seperate" />
             <div className="row">
-                <div className="col l4 s6 m6">
-                    <Card  mystyle="card-height" title="Custom Software Development" text="Our Young team is equally passionate to develop a software as per the specific needs of your business rapidly" button={{text:"Know More",path:"knowmore"}}>
-                        <FcServices className="display-2" />
+                    {loading ?  
+                    (<Loading />) 
+                    : 
+                    (data.map((item)=>(
+                    <div className="col l4 s6 m6">
+                    <Card key={item._id}  mystyle="card-height" title={item.projectName} text={item.brief} >
+                    <div className="card-image">
+                    <img src="https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="responsive-img" />
+                    {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.solutionImgUrl}`}  alt="Image" /> */}
+                    </div>
                     </Card>
-                </div>
-                <div className="col l4 s6 m6">
-                    <Card  mystyle="card-height" title="Dedicated Development Teams" text="Each Edunomics client works with a handpicked team of our experts. From idea to implementation, we can leverage your existing resources or become your new IT crew." button={{text:"Know More",path:"\knowmore"}}>
-                        <FcServices className="display-2" />
-                    </Card>
-                </div>     
-                <div className="col l4 s6 m6">
-                    <Card mystyle="card-height" title="Legacy Software Migration" text="Implementing the best Business Analysis practices to ensure the project success." button={{text:"Know More",path:"\knowmore"}}>
-                        <FcServices className="display-2" />
-                    </Card>
-                </div>
-
-                <div className="col l4 s6 m6">
-                    <Card mystyle="card-height" title="Computer Vision"  button={{text:"Know More",path:"\knowmore"}}>
-                        <FcServices className="display-2" />
-                    </Card>
-                </div>
-                <div className="col l4 s6 m6">
-                    <Card mystyle="card-height" title="Natural Language Processing" button={{text:"Know More",path:"\knowmore"}}>
-                        <FcServices className="display-2" />
-                    </Card>
-                </div>     
-                <div className="col l4 s6 m6">
-                    <Card mystyle="card-height" title="Data Analytics & Visualisation" button={{text:"Know More",path:"\knowmore"}}>
-                        <FcServices className="display-2" />
-                    </Card>
-                </div>
-            </div>
+                    </div>
+                    ))) 
+                    }
+              </div>                
             </div>
          </section> 
          <DiscussForm />  
