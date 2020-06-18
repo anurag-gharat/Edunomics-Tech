@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CareerImg from '../Images/Career.svg'
 import Heading from '../Components/Heading'
 import CareerCard from '../Components/CareerCard'
+import {getAllJobs} from '../API/AllData'
 
 export default function Career() {
+
+    useEffect(()=>{
+
+    },[])
+
     return (
         <div className="container-fluid">
             <Heading title="Career at Edunomics" />

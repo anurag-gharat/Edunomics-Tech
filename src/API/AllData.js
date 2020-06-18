@@ -1,7 +1,8 @@
 import axios from 'axios'
 
+//for getting the list of team members
 export const getOurTeam=()=>{
-        return axios.get("https://edunomics.herokuapp.com/api/tech/aboutus")
+        return axios.get("https://edunomics.in/api/tech/aboutus")
                 .then(response=>{return response.data})
                 .catch(error=>{return error})
 }
@@ -9,7 +10,7 @@ export const getOurTeam=()=>{
 //for getting all solutions 
 export const getAllSolutions=async()=>{
         try{
-              const res=await axios.get('https://edunomics.herokuapp.com/api/tech/solutions')  
+              const res=await axios.get('https://edunomics.in/api/tech/solutions')  
                 return res.data
         }
         catch(error){
@@ -20,7 +21,7 @@ export const getAllSolutions=async()=>{
 //for getting business 
 export const getAllBusiness=async()=>{
         try{
-              const res=await axios.get('https://edunomics.herokuapp.com/api/tech/business')  
+              const res=await axios.get('https://edunomics.in/api/tech/business')  
                 return res.data
         }
         catch(error){
@@ -31,7 +32,7 @@ export const getAllBusiness=async()=>{
 //for getting all services
 export const getAllServices=async()=>{
         try{
-              const res=await axios.get('https://edunomics.herokuapp.com/api/tech/service')  
+              const res=await axios.get('https://edunomics.in/api/tech/service')  
                 return res.data
         }
         catch(error){
@@ -44,11 +45,33 @@ export const getAllServices=async()=>{
 //for getting all blogs
 export const getAllBlogs=async()=>{
         try{
-              const res=await axios.get('https://edunomics.herokuapp.com/api/tech/blog')  
+              const res=await axios.get('https://edunomics.in/api/tech/blog')  
               
               return res.data
         }
         catch(error){
                 console.log("error is ",error)
+        }
+}
+
+//for getting all available job positions
+export const getAllJobs=async()=>{
+        try {
+                const res=await axios.get('https://edunomics.in/api/tech/CareerOpenings')
+                return res.data
+        } catch (error) {               
+                console.log(error)
+        }
+}
+
+
+
+//for getting all data related to startup
+export const getStartUp=async()=>{
+        try {
+                const res=await axios.get('https://edunomics.in/api/tech/StartUps')
+                return res.data
+        } catch (error) {               
+                console.log(error)
         }
 }
