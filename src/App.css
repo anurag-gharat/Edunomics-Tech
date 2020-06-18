@@ -99,6 +99,12 @@ section{
 blockquote{
     border-color: #9575cd;
 }
+ul{
+    overflow-y: hidden !important;
+}
+.card-title{
+    font-size: 16px !important;
+}
 
 @media only screen and (max-width: 600px) {
     .button-primary{

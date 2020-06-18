@@ -22,6 +22,7 @@ import Error404 from './Pages/Error404';
 import StartUp from './Pages/StartUp';
 import ManagementSystems from './Pages/ManagementSystems';
 import ScrollToTop from './Components/ScrollToTop';
+import Career from './Pages/Career';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/casestudies" component={CaseStudies} />
           <Route path="/works" component={Works} />
           <Route path="/startup" component={StartUp} />
+          <Route path="/career" component={Career} />
           <Route path="/managementsystems" component={ManagementSystems} />
 
 

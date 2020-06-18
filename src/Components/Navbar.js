@@ -35,10 +35,13 @@ export default function Navbar() {
             <ul id="dropdown1" className="dropdown-content deep-purple-text">
                 <li><Link to="/aboutus" className="deep-purple-text">About Us</Link></li>
                 <li><Link to="/ourteam" className="deep-purple-text">Team</Link></li>
+                <li><Link to="/career" className="deep-purple-text">Career</Link></li>
+
             </ul>
             <ul id="dropdown11" className="dropdown-content deep-purple-text">
                 <li><Link to="/aboutus" className="deep-purple-text">About Us</Link></li>
                 <li><Link to="/ourteam" className="deep-purple-text">Team</Link></li>
+                <li><Link to="/career" className="deep-purple-text">Career</Link></li>
             </ul>
             <ul id="dropdown2" className="dropdown-content deep-purple-text">
                 <li><Link to="/blog" className="deep-purple-text">Blog</Link></li>
