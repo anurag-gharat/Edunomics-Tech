@@ -23,13 +23,13 @@ export default function Navbar() {
             <nav className=" deep-purple">
             <div className="nav-wrapper deep-purple">
             <a href="/" className="brand-logo"><img className="responsive-img" src={logo} alt="logo" height="100%" width="60%"   /></a>
-            <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons white-text ">menu</i></a>
+            <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons white-text ">menu</i></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/solutions">Solution</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><a href="/startup">Start Up</a></li>
-                <li><a className="dropdown-trigger" href="#" data-target="dropdown11">Company<i className="material-icons right">arrow_drop_down</i></a></li>
-                <li><a className="dropdown-trigger" href="#" data-target="dropdown21">Resources<i className="material-icons right">arrow_drop_down</i></a></li>
+                <li><a className="dropdown-trigger" href="/" data-target="dropdown11">Company<i className="material-icons right">arrow_drop_down</i></a></li>
+                <li><a className="dropdown-trigger" href="/" data-target="dropdown21">Resources<i className="material-icons right">arrow_drop_down</i></a></li>
                 <li><Link to="/contact">Contact</Link></li>
              </ul>
             <ul id="dropdown1" className="dropdown-content deep-purple-text">

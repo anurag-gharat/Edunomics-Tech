@@ -10,23 +10,23 @@ export default function Works() {
             <div className="row">
                 <div className="col s12 l4">
                     <Card title="Quality Management System" footerText="Technology: NodeJS, ReactJS, Python & Android along with GCP AWS Cloud, Python" text="The Quality Management engineered by our team is capable of handling Raw Material to finish good quality test along with recipe management for production in real time, following the organisational workflow">
-                    <img alt="qulaity image" className="" src={Quality}  ></img>
+                    <img alt="qulaity " className="" src={Quality}  ></img>
                     </Card> 
                      
                 </div>
                 <div className="col s12 l4">
                     <Card title="Quality Management System" footerText="Technology: NodeJS, ReactJS, Python & Android along with GCP AWS Cloud, Python" text="The Quality Management engineered by our team is capable of handling Raw Material to finish good quality test along with recipe management for production in real time, following the organisational workflow">
-                    <img alt="qulaity image" className="" src={Quality}  ></img>
+                    <img alt="qulaity " className="" src={Quality}  ></img>
                     </Card> 
                      
                 </div>                <div className="col s12 l4">
                     <Card title="Quality Management System" footerText="Technology: NodeJS, ReactJS, Python & Android along with GCP AWS Cloud, Python" text="The Quality Management engineered by our team is capable of handling Raw Material to finish good quality test along with recipe management for production in real time, following the organisational workflow">
-                    <img alt="qulaity image" className="" src={Quality}  ></img>
+                    <img alt="qulaity " className="" src={Quality}  ></img>
                     </Card> 
                      
                 </div>                <div className="col s12 l4">
                     <Card title="Quality Management System" footerText="Technology: NodeJS, ReactJS, Python & Android along with GCP AWS Cloud, Python" text="The Quality Management engineered by our team is capable of handling Raw Material to finish good quality test along with recipe management for production in real time, following the organisational workflow">
-                    <img alt="qulaity image" className="" src={Quality}  ></img>
+                    <img alt="qulaity " className="" src={Quality}  ></img>
                     </Card> 
                      
                 </div>

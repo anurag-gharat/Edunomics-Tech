@@ -10,7 +10,6 @@ export default function Team() {
 
 
     const [team,setTeam]=useState([])
-    const [error, setError] = useState('')
     const [loading, setLoading] = useState(true)
 
     const fetchData=()=>{
@@ -24,7 +23,7 @@ export default function Team() {
                 console.log("error occured")
             }
         })
-        .catch(error=>setError(error))
+        .catch(error=>console.log(error))
      
     }
 

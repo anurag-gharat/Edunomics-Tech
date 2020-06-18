@@ -5,7 +5,7 @@ export default function BlogCard({item}) {
     return (
         <div className="card hoverable">
         <div className="card-image">
-          <img src={item.image_url} alt="BLog Image" />
+          <img src={item.image_url} alt="BLog" />
         </div>
         <div className="card-content">
         <h5 className="deep-purple-text">{item.title}</h5>

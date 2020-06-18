@@ -1,7 +1,6 @@
 import React from 'react'
 import startup from '../../Images/Startup.svg'
 import empower from '../../Images/empower.svg'
-import BlockQuote from '../../Components/BlockQuote'
 
 export default function Service() {
     return (
