@@ -1,13 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import CareerImg from '../Images/Career.svg'
 import Heading from '../Components/Heading'
 import CareerCard from '../Components/CareerCard'
 import {getAllJobs} from '../API/AllData'
+import Loading from '../Components/Loading'
 
 export default function Career() {
 
-    useEffect(()=>{
+    const [jobs, setJobs] = useState({})
+    const [loading,setLoading] =useState(true)
 
+    useEffect(()=>{
+        getAllJobs()
+        .then(response=>{
+            if(response.success){
+                setJobs(response.data)
+            }})
+        .catch(error=>console.log(error))
+        .finally(()=>(setLoading(false)))
     },[])
 
     return (
@@ -33,16 +43,14 @@ export default function Career() {
             <div className="row">
                 <Heading title="Career Openings at Edunomics" />
             </div>
-            <div className="row">
-                <CareerCard />
-                <CareerCard />
-                <CareerCard />
-                <CareerCard />
-                <CareerCard />
-                <CareerCard />
+
+                {loading ? 
+                (<Loading />):
+                (<div className="row">
+                    {jobs.map((item)=>(<CareerCard job={item} key={item._id} />))}
+                </div>)}
                 
 
-            </div>
         </div>
         </div>
     )
