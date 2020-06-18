@@ -55,8 +55,8 @@ export default function Team() {
                             <img 
                             alt="member"
                             className="responsive-img circle hoverable"
-                            // src={`https://edunomics.herokuapp.com/api/tech/aboutus/getpic/${member.picUrl}` || Avatar}
-                            src={Avatar}
+                            src={`https://edunomics.in/api/tech/aboutus/getpic/${member.picUrl}` || Avatar}
+                            // src={Avatar}
                             width="80%" />
                         </Panel> 
                         </div>

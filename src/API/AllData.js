@@ -45,7 +45,7 @@ export const getAllServices=async()=>{
 //for getting all blogs
 export const getAllBlogs=async()=>{
         try{
-              const res=await axios.get('https://edunomics.in/api/tech/blog')  
+              const res=await axios.get('https://edunomics.in/api/tech/blogs')  
               
               return res.data
         }
