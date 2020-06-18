@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import About from '../Contents/StartUp/About'
 import Heading from '../Components/Heading'
 import Service from '../Contents/StartUp/Service'
 import Plan from '../Contents/StartUp/Plan'
 
 function StartUp() {
+
     return (
         <div className="container-fluid">
             
