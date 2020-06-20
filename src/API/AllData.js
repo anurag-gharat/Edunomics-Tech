@@ -22,7 +22,7 @@ export const getAllSolutions=async()=>{
 export const getAllBusiness=async()=>{
         try{
               const res=await axios.get('https://edunomics.in/api/tech/business')  
-                return res.data
+              return res.data
         }
         catch(error){
                 console.log("error is ",error)
@@ -73,5 +73,22 @@ export const getStartUp=async()=>{
                 return res.data
         } catch (error) {               
                 console.log(error)
+        }
+}
+
+//post form for submission
+export const postSubmission=async(body)=>{
+        console.log(body)
+        try {
+                const headers ={
+                        Accept:"application/json",
+                        "Content-Type":"application/json"
+                    }
+                
+                const res=axios.post('https://edunomics.in/api/tech/StartUps',body,{headers:headers})
+                console.log(res)
+
+        } catch (error) {
+         console.log(error)       
         }
 }

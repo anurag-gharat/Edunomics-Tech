@@ -13,8 +13,12 @@ export default function Services() {
 
     useEffect(()=>{
         getAllServices()
-        .then(res=>console.log(res.data))
-        .then(res=>setData(res.data))
+        .then(res=>{
+            if(res.success){
+                setData(res.data)
+            }
+        }
+            )
         .catch(error=>console.log(error))
         .finally(()=>setLoading(false))
     },[])
@@ -31,7 +35,7 @@ export default function Services() {
                     : 
                     (data.map((item)=>(
                     <div className="col l4 s6 m6" key={item._id}>
-                    <Card   mystyle="card-height" title={item.projectName} text={item.brief} >
+                    <Card   mystyle="card-height" title={item.serviceName} text={item.brief} >
                     <div className="card-image">
                     <img alt="service" src={`https://edunomics.in/api/tech/getpic/${item.projectImgUrl}`} className="responsive-img" />
                     {/* <img src={`https://edunomics.herokuapp.com/api/tech/getpic/${item.solutionImgUrl}`}  alt="Image" /> */}
