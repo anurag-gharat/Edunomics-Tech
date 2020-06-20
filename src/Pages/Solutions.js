@@ -15,13 +15,20 @@ export default function Solutions() {
 
     useEffect(()=>{
         getAllSolutions()
-        .then(response=>setData(response.data))
+        .then(response=>{
+            if(response.success){
+            setData(response.data)
+            }
+            else{
+                setData({})
+            }
+        })
         .catch(error=>console.log(error))
         .finally(()=>setLoading(false))
     },[])
     
 
-    console.log(data,loading)
+    console.log(data)
 
     return (
         <>
@@ -36,7 +43,7 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
 <div className="row">
                 {loading ? (<Loading></Loading>)
                 :
-                
+                (data===null? (<div className="container center"><h4>NO DATA FOUND</h4></div>):
                 (data.map(((item)=>(
                     <div className="col s6 l4 m6" key={item._id}>
                 <Card title={item.solutionName} text={item.brief} mystyle="white lighten-4 z-depth-1">
@@ -45,7 +52,7 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
                     </div>
                 </Card>
             </div>
-                ))))}
+                )))))}
                 
                 
                     

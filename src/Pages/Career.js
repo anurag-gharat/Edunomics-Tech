@@ -15,6 +15,9 @@ export default function Career() {
         .then(response=>{
             if(response.success){
                 setJobs(response.data)
+            }
+            else{
+                setJobs({})
             }})
         .catch(error=>console.log(error))
         .finally(()=>(setLoading(false)))
@@ -46,9 +49,13 @@ export default function Career() {
 
                 {loading ? 
                 (<Loading />):
-                (<div className="row">
-                    {jobs.map((item)=>(<CareerCard job={item} key={item._id} />))}
-                </div>)}
+                (!jobs===null ? (
+                    <div className="row">
+                {jobs.map((item)=>(<CareerCard job={item} key={item._id} />))}
+            </div>
+                ):(
+                    <div className="container center "><h4>No jobs found</h4></div>
+                ))}
                 
 
         </div>

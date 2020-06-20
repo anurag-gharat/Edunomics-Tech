@@ -13,7 +13,13 @@ export default function WhatWeCreated() {
     
     useEffect(()=>{
         getAllBusiness()
-        .then(response=>setData(response.data))
+        .then(response=>{
+            if(response.success){
+            setData(response.data)
+            }
+            else{
+                setData(null)
+            }})
         .catch(error=>console.log(error))
         .finally(()=>setLoading(false))
 
@@ -30,16 +36,20 @@ export default function WhatWeCreated() {
                     ( <Loading /> ) 
                     :  
                     (
-                        data.map((item)=>(  
-                    <div className="col l4 s12" key={item._id}>
-                        <Card mystyle="grey lighten-4 z-depth-1" title={item.projectName} text={item.brief}>
-                        <div className="card-image">
-                        {/*  */}
-                        <img src={`https://edunomics.in/api/tech/getpic/${item.projectImgUrl}`}  alt="what we created" className="responsive-img" />
-                        </div>
-                        </Card>
-                    </div>
-                        ))
+                        data===null ? (
+                            <div className="container center">No data found</div>
+                        ):(
+                            data.map((item)=>(  
+                                <div className="col l4 s12" key={item._id}>
+                                    <Card mystyle="grey lighten-4 z-depth-1" title={item.projectName} text={item.brief}>
+                                    <div className="card-image">
+                                    {/*  */}
+                                    <img src={`https://edunomics.in/api/tech/getpic/${item.projectImgUrl}`}  alt="what we created" className="responsive-img" />
+                                    </div>
+                                    </Card>
+                                </div>
+                                    ))
+                        )
                     ) }
 
                 </div>  
