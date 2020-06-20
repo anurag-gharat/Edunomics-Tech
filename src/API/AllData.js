@@ -85,8 +85,8 @@ export const postSubmission=async(body)=>{
                         "Content-Type":"application/json"
                     }
                 
-                const res=axios.post('https://edunomics.in/api/tech/StartUps',body,{headers:headers})
-                console.log(res)
+                const res=await axios.post('https://edunomics.in/api/tech/StartUps',body,{headers:headers})
+                return res.data
 
         } catch (error) {
          console.log(error)       

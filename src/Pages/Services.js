@@ -14,7 +14,6 @@ export default function Services() {
     useEffect(()=>{
         getAllServices()
         .then(res=>{
-            console.log(res)
             if(res.success){
                 setData(res.data)
             }

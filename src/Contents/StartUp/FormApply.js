@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {postSubmission} from '../../API/AllData'
+import Loading from '../../Components/Loading'
 
 export default function FormApply() {
 
@@ -11,7 +12,8 @@ export default function FormApply() {
         type:'',
         file:null
     })
-
+    const [loading,setLoading]=useState(false)
+    const [response,setResponse]=useState('')
     const {title,email,phone_no,type,file}=values
     const handleChange=(event)=>{
         const name=event.target.name
@@ -23,6 +25,7 @@ export default function FormApply() {
         
     }
     const handleSubmit=(event)=>{
+        setLoading(true)
         event.preventDefault()
         const data = new FormData() 
         data.append("title",title );
@@ -30,21 +33,25 @@ export default function FormApply() {
         data.append("email", email);
         data.append("phone_no", phone_no);
         data.append('file', file)
-        console.log(data)
         postSubmission(data)
+        .then(
+            response=>{
+                setResponse(response.message)
+            }
+        )
+        .catch((error)=>console.log(error))
+        .finally(()=>setLoading(false))
     }
 
     const handleFile=(event)=>{
-        console.log(event.target.name,event.target.files[0])
         setValues({...values,file:event.target.files[0]})
     }
-    console.log('====================================');
-    console.log(values);
-    console.log('====================================');
+
 
     return (
         <div className="container">
             <form onSubmit={(event)=>handleSubmit(event)} encType = "multipart/form-data">
+                {response ? (<div className="row center green-text">{response}</div>) : ( null )}
                 <div className="row">
                 <div className="col s12 l6">
                     <div className="input-field">
@@ -79,20 +86,24 @@ export default function FormApply() {
                 </div>
                     <div className="col l12 s12">
                     <div className="file-field input-field">
-      <div className="btn deep-purple">
-        <span>File</span>
-        <input type="file" onChange={handleFile} name='file' />
-      </div>
-      <div className="file-path-wrapper">
-        <input className="file-path validate" type="text" />
-      </div>
-    </div>
+                <div className="btn deep-purple">
+                    <span>File</span>
+                    <input type="file" onChange={handleFile} name='file' />
+                </div>
+                <div className="file-path-wrapper">
+                    <input className="file-path validate" type="text" />
+                </div>
+                </div>
                     </div>
                 </div>
                 <div className="container center">
+                    {loading ? (<Loading /> ) : (
                     <button className="btn deep-purple" type="submit">Submit</button>
+
+                      )}
                 </div>
             </form>
+            
         </div>
     )
 }

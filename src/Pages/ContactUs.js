@@ -20,7 +20,7 @@ export default function ContactUs() {
                             <h4 className="deep-purple-text">Live Chat</h4>
                             <h6>WAIT TIME :<span className="grey-text">less than 2 minutes</span></h6>
                             <h6>Working Hours : <span className="grey-text">8:00am to 3:00pm</span></h6>
-                            <a className="btn btn-small deep-purple white-text" href="https://api.whatsapp.com/send?phone=7745050822" target="_blank"> Chat Now</a>
+                            <a className="btn btn-small deep-purple white-text" href="https://api.whatsapp.com/send?phone=9669911101" target="_blank"> Chat Now</a>
                         </div>
                     </div>
                     <div className="row">
