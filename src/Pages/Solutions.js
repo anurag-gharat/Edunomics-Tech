@@ -28,7 +28,6 @@ export default function Solutions() {
     },[])
     
 
-    console.log(data)
 
     return (
         <>
@@ -47,8 +46,8 @@ Software focuses on the delivery of the apps designed to enhance the clients' bu
                 (data.map(((item)=>(
                     <div className="col s6 l4 m6" key={item._id}>
                 <Card title={item.solutionName} text={item.brief} mystyle="white lighten-4 z-depth-1">
-                    <div className="card-image">
-                 <img src={`https://edunomics.in/api/tech/getpic/${item.solutionImgUrl}`}  className="responsive-img" alt="solution" />
+                    <div className="card-image no-pad">
+                    <img src={`https://edunomics.in/api/getfile/${item.solutionImgUrl}`}  className="w-100" alt="solution" height="200px" width="100%" />
                     </div>
                 </Card>
             </div>

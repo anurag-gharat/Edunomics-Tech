@@ -17,7 +17,7 @@ nav{
     color: #9575cd;
 }
 .card-height{
-    min-height: 400px !important;
+    max-height: auto !important;
 }
 .container-fluid{
     padding: 5%;

@@ -14,11 +14,12 @@ export default function WhatWeCreated() {
     useEffect(()=>{
         getAllBusiness()
         .then(response=>{
+            console.log(response)
             if(response.success){
             setData(response.data)
             }
             else{
-                setData(null)
+                setData({})
             }})
         .catch(error=>console.log(error))
         .finally(()=>setLoading(false))
@@ -44,7 +45,7 @@ export default function WhatWeCreated() {
                                     <Card mystyle="grey lighten-4 z-depth-1" title={item.projectName} text={item.brief}>
                                     <div className="card-image">
                                     {/*  */}
-                                    <img src={`https://edunomics.in/api/tech/getpic/${item.projectImgUrl}`}  alt="what we created" className="responsive-img" />
+                                    <img src={`https://edunomics.in/api/getfile/${item.projectImgUrl}`}  alt="what we created"  height="200px" width="100%" />
                                     </div>
                                     </Card>
                                 </div>
