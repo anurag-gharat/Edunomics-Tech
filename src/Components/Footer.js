@@ -58,11 +58,21 @@ export default function Footer() {
 
             </div>
             <div className="row no-mar center">
-                <GrFacebookOption className="display-1 footer-icons deep-purple-text lighten-1" />  
-                <GrTwitter  className="display-1 footer-icons deep-purple-text" />   
-                <GrGooglePlus  className="display-1 footer-icons deep-purple-text" /> 
+            <a target="_blank" rel="noopener noreferrer"  href="https://www.facebook.com/edunomics2020/">
+                <GrFacebookOption className="display-1 footer-icons deep-purple-text lighten-1" />
+            </a>  
+            <a target="_blank" rel="noopener noreferrer"  href="https://twitter.com/Edunomics2">
+                <GrTwitter  className="display-1 footer-icons deep-purple-text" />
+            </a>
+            <a  href="mailto:contact@edunomics.in"   rel="noopener noreferrer" target="_blank">
+                <GrGooglePlus  className="display-1 footer-icons deep-purple-text" />
+            </a>
+            <a target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/company/edunomics/">
                 <GrLinkedinOption  className="display-1 footer-icons deep-purple-text" />
+            </a>
+            <a  rel="noopener noreferrer"  href="https://api.whatsapp.com/send?phone=9669911101" target="_blank">
                 <FaWhatsapp  className="display-1 footer-icons deep-purple-text"  />               
+            </a>
             </div>
             <div className="row no-mar center black white-text">
             All rights reserved.
