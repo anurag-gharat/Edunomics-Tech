@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../Images/logo.png'
 import {GrFacebookOption,GrTwitter,GrGooglePlus,GrLinkedinOption} from 'react-icons/gr'
 import {FaWhatsapp} from 'react-icons/fa'
+import { Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -55,6 +56,14 @@ export default function Footer() {
 
                     </ul>
                 </div>
+
+            </div>
+            <div className="row quick-links">
+                <Link to="/career">Career</Link>
+                <Link to="/affiliateprogram">Affiliate Program</Link>
+                <Link to="/aboutus">About</Link>
+                <Link to="/startup">StartUp</Link>
+                <Link to="/blog">Blogs</Link>
 
             </div>
             <div className="row no-mar center">

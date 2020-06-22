@@ -17,7 +17,7 @@ export default function Program() {
                 <div className="container center">
                 <Heading title="Edunomics Affiliate Program" />
                <p>Join the leading SaaS affiliate program to earn 15% of every sale</p>
-               <Link className="btn btn-large deep-purple">Become an Edunomics Affiliate</Link> 
+               <Link className="btn btn-large deep-purple" to="affiliateprogramform">Become an Edunomics Affiliate</Link> 
                 </div>
             </section>
                 <div className="row">
@@ -79,7 +79,7 @@ export default function Program() {
                         </div>
                     </div>
                     <div className="container center mt-5">
-                        <Link className="btn white deep-purple-text  hoverable">Start Your Journey Now !</Link>
+                        <Link to="affiliateprogramform" className="btn white deep-purple-text  hoverable">Start Your Journey Now !</Link>
                     </div>
                 </div>
                 <section>

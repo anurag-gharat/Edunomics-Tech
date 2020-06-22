@@ -34,6 +34,13 @@ nav{
 .no-pad{
     padding: 0px !important;
 }
+.quick-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.quick-links>a{
+    color: #673ab7;
+}
 footer a{
     color: white;
 }
@@ -118,5 +125,10 @@ ul{
     .pl-5{
         padding-left: 20px !important;
     }
-
+    .quick-links{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
 }
