@@ -13,6 +13,8 @@ export default function Career() {
     useEffect(()=>{
         getAllJobs()
         .then(response=>{
+            console.log(response)
+
             if(response.success){
                 setJobs(response.data)
             }
@@ -49,7 +51,7 @@ export default function Career() {
 
                 {loading ? 
                 (<Loading />):
-                (!jobs===null ? (
+                (jobs ? (
                     <div className="row">
                 {jobs.map((item)=>(<CareerCard job={item} key={item._id} />))}
             </div>
