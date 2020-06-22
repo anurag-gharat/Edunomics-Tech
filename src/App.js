@@ -23,6 +23,7 @@ import StartUp from './Pages/StartUp';
 // import ManagementSystems from './Pages/ManagementSystems';
 import ScrollToTop from './Components/ScrollToTop';
 import Career from './Pages/Career';
+import Program from './Pages/Program';
 
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
           <Route path="/works" component={Works} />
           <Route path="/startup" component={StartUp} />
           <Route path="/career" component={Career} />
+          <Route path="/affiliateprogram" component={Program} />
+
           {/* <Route path="/managementsystems" component={ManagementSystems} /> */}
 
 
