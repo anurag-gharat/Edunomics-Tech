@@ -16,7 +16,7 @@ export default function AboutUs() {
             Today, over 150,000 companies trust our software to run their business. We believe it’s just the beginning</p>
             </div>
             <div className="container center">
-                <button className="btn deep-purple white-text"><Link className="white-text">About Our Work</Link></button>
+                <button className="btn deep-purple white-text"><Link className="white-text" to="/services" >About Our Work</Link></button>
             </div>
             <Heading title="Our Advantages" />
             <div className="row center-align">

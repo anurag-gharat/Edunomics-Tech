@@ -17,7 +17,6 @@ export default function Blog() {
         .finally(()=>setLoading(false))
     },[])
 
-    console.log(data)
     return (
         <>
           <div className="container-fluid">

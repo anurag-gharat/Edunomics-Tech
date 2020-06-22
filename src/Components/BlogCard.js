@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function BlogCard({item}) {
+
     return (
         <div className="card hoverable">
         <div className="card-image">
-          <img src={item.image_url} alt="BLog" />
+          <img src={`https://edunomics.in/api/getfile/${item.image_url}`} alt="BLog" height="200px" />
         </div>
         <div className="card-content">
         <h5 className="deep-purple-text">{item.title}</h5>
@@ -17,4 +18,8 @@ export default function BlogCard({item}) {
       </div> 
     )
 }
-// https://s3-ap-south-1.amazonaws.com/redlof/think201.com/uploads/2019/02/website-vs-web-app-1024x384.png
+
+
+
+
+

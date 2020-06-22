@@ -14,7 +14,6 @@ export default function WhatWeCreated() {
     useEffect(()=>{
         getAllBusiness()
         .then(response=>{
-            console.log(response)
             if(response.success){
             setData(response.data)
             }

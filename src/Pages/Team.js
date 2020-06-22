@@ -53,9 +53,9 @@ export default function Team() {
 
                             <Panel title={member.name} alignment="center" key={member._id}>
                             <img 
-                            alt="member"
+                            alt={'Member'}
                             className="responsive-img circle hoverable"
-                            src={`https://edunomics.in/api/tech/aboutus/getpic/${member.picUrl}` || Avatar}
+                            src={`https://edunomics.in/api/tech/aboutus/getpic/${member.picUrl}`}
                             // src={Avatar}
                             width="80%" />
                         </Panel> 

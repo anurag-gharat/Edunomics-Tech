@@ -11,7 +11,7 @@ export default function SingleBlog(props) {
             <section className="section">
             <BlockQuote title={title} />
             <div className="container">
-            <img alt={image_url} src="https://s3-ap-south-1.amazonaws.com/redlof/think201.com/uploads/2019/02/website-vs-web-app-1024x384.png" className="responsive-img" />
+            <img alt="Blogs" src={`https://edunomics.in/api/getfile/${image_url}`} className="responsive-img" />
             </div>
             <p>Posted on{d.toDateString()}</p>
             <h4>{subtitle}</h4>
