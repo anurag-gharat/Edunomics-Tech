@@ -24,7 +24,7 @@ import StartUp from './Pages/StartUp';
 import ScrollToTop from './Components/ScrollToTop';
 import Career from './Pages/Career';
 import Program from './Pages/Program';
-import AffliateForm from './Pages/AffliateForm';
+// import AffliateForm from './Pages/AffliateForm';
 
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
           <Route path="/startup" component={StartUp} />
           <Route path="/career" component={Career} />
           <Route path="/affiliateprogram" component={Program} />
-          <Route path="/affiliateprogramform" component={AffliateForm} />
+          {/* <Route path="/affiliateprogramform" component={AffliateForm} /> */}
 
 
           {/* <Route path="/managementsystems" component={ManagementSystems} /> */}
